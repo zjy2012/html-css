@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 表格是用来显示数据的  -->
+
+<body>
+    <!-- 表格属性 但是一般会放到CSS里面  border边框像素  cellspancing  表示的是单元格与单元格之间的边距 cellpad
+        ing 指的是单元格内部的边距 -->
+    <table align="center" border="2" cellpadding="4" cellspacing="3" width="500" height="400">
+        <!-- 表头单元格的显示  会加粗居中 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>诺诺</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>诺诺</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>诺诺</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>诺诺</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>诺诺</td>
+                <td>女</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+        <!-- 显示的更加清晰 逻辑更加清楚 -->
+    </table>
+    <p align="center">
+        查个段落
+    </p>
+    <!-- 合并单元格的方式  以及目标单元格  合并单元格的步骤 -->
+    <table align="center" border="4" cellpadding="10" cellspacing="0" width="500" height="400">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>id</th>
+                <th>id</th>
+                <th>id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+                <!-- 几个显示的是要合并几个单元格 -->
+                <td colspan="2">
+                    3
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+                <td align="center" colspan="2" rowspan="2">
+                    3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    123
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    3
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

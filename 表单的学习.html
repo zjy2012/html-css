@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签的学习</title>
+</head>
+
+<body>
+    <!-- 收集用户的信息  表单的组成
+    注册页面  里面表单 的使用长景 表单控件 -->
+    <!-- 将信息提交到后端的数据库 进行后处理 -->
+
+    <form action="http://localhost:8080/register" method="post" name="register_user">
+        <!-- input输入表单元素 -->
+        <!-- <input type="button"> -->
+        用户名:<input type="text" name="name"> 用户名不能超过6位<br> 密码: <input type="password" name="password">密码长度不小于6位<br>
+        <!-- <input type="button"> -->
+        <!-- inpute 表单元素 里面 name  用于区分表单元素 而value值用来输入默认值 -->
+        <input type="radio" name="sex" checked="checked">男
+        <input type="radio" name="sex">女
+        <!-- 这样子就不能同时选中 -->
+        <input type="submit" value="免费注册">
+    </form>
+</body>
+
+</html>
