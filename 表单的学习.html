@@ -16,13 +16,25 @@
     <form action="http://localhost:8080/register" method="post" name="register_user">
         <!-- input输入表单元素 -->
         <!-- <input type="button"> -->
-        用户名:<input type="text" name="name"> 用户名不能超过6位<br> 密码: <input type="password" name="password">密码长度不小于6位<br>
+        <label for="name">用户名:</label>
+        <input type="text" name="name" id="name"> 用户名不能超过6位
+        <br> 密码: <input type="password" name="password">密码长度不小于6位<br>
         <!-- <input type="button"> -->
         <!-- inpute 表单元素 里面 name  用于区分表单元素 而value值用来输入默认值 -->
-        <input type="radio" name="sex" checked="checked">男
-        <input type="radio" name="sex">女
+        <input type="radio" name="sex" checked="checked" id="male"> <label for="male">男</label> <br>
+        <input type="radio" name="sex" id="female"><label for="female">女</label><br>
         <!-- 这样子就不能同时选中 -->
-        <input type="submit" value="免费注册">
+        <input type="submit" value="免费注册"><br>
+        <!-- 重置按钮的输入 -->
+        <input type="reset" value="重新输入"><br>
+        <input type="button" value="获取短信验证码"><br>
+        <input type="file" value="上传头像">
+        <h3>籍贯：</h3>
+        <select name="winter" id="winter">
+            <option selected="select" value="凛冬降至">凛冬降至</option>
+            <option value="寒夜扯面">寒夜扯面</option>
+            <option value="凛冬降至">凛冬降至</option>
+        </select>
     </form>
 </body>
 
